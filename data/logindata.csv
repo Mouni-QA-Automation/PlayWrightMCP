@@ -1,0 +1,3 @@
+name,email,password
+validUser,testuser@example.com,Test@1234
+lockedUser,locked@example.com,Locked@123
