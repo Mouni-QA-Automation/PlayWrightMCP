@@ -17,7 +17,7 @@ test.beforeEach(async ({ page }) => {
   productPage = new ProductPage(page);
 });
 
-test('should search for a product and open its details @master @sanity @regression', async ({ page }) => {
+test('should search for a product and open its details @master @regression', async ({ page }) => {
   await homePage.search(config.productName);
   const count = await searchResultsPage.resultsCount();
   expect(count).toBeGreaterThan(0);
