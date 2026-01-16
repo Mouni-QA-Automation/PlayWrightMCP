@@ -25,7 +25,7 @@ test.afterEach(async ({ page }) => {
     await page.close();
 });
 
-test('should logout successfully @master @sanity @regression', async ({ page }) => {
+test('should logout successfully @master @regression', async ({ page }) => {
     await homePage.clickMyAccount();
     await homePage.clickLogin();
     await loginPage.login(config.email, config.password);

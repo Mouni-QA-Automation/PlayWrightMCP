@@ -20,7 +20,7 @@ test.beforeEach(async ({ page }) => {
     shoppingCartPage = new ShoppingCartPage(page);
 });
 
-test('should add product to cart and verify total @master @sanity @regression', async ({ page }) => {
+test('should add product to cart and verify total @master @regression', async ({ page }) => {
     await homePage.search(config.productName);
     await searchResultsPage.openProductByName(config.productName);
     await productPage.addToCart(Number(config.productQuantity));
