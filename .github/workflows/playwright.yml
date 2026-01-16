@@ -29,7 +29,7 @@ jobs:
       #run: npx playwright test
       run: npm run test:sanity
 
-      name: upload Playwright HTML Report
+    - name: upload Playwright HTML Report
       if: always()
       uses: actions/upload-artifact@v4  
       with:
